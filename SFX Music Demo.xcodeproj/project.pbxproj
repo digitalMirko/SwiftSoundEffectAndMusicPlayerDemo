@@ -13,6 +13,8 @@
 		AC8CBBDF237CF99100CB3A29 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AC8CBBDD237CF99100CB3A29 /* Main.storyboard */; };
 		AC8CBBE1237CF99200CB3A29 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AC8CBBE0237CF99200CB3A29 /* Assets.xcassets */; };
 		AC8CBBE4237CF99200CB3A29 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AC8CBBE2237CF99200CB3A29 /* LaunchScreen.storyboard */; };
+		AC8CBBED237CFDBE00CB3A29 /* Explosion.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = AC8CBBEB237CFDBE00CB3A29 /* Explosion.mp3 */; };
+		AC8CBBEE237CFDBE00CB3A29 /* ActionChase.wav in Resources */ = {isa = PBXBuildFile; fileRef = AC8CBBEC237CFDBE00CB3A29 /* ActionChase.wav */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,8 @@
 		AC8CBBE0237CF99200CB3A29 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AC8CBBE3237CF99200CB3A29 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		AC8CBBE5237CF99200CB3A29 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AC8CBBEB237CFDBE00CB3A29 /* Explosion.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Explosion.mp3; sourceTree = "<group>"; };
+		AC8CBBEC237CFDBE00CB3A29 /* ActionChase.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = ActionChase.wav; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +67,8 @@
 				AC8CBBE0237CF99200CB3A29 /* Assets.xcassets */,
 				AC8CBBE2237CF99200CB3A29 /* LaunchScreen.storyboard */,
 				AC8CBBE5237CF99200CB3A29 /* Info.plist */,
+				AC8CBBEC237CFDBE00CB3A29 /* ActionChase.wav */,
+				AC8CBBEB237CFDBE00CB3A29 /* Explosion.mp3 */,
 			);
 			path = "SFX Music Demo";
 			sourceTree = "<group>";
@@ -125,8 +131,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AC8CBBED237CFDBE00CB3A29 /* Explosion.mp3 in Resources */,
 				AC8CBBE4237CF99200CB3A29 /* LaunchScreen.storyboard in Resources */,
 				AC8CBBE1237CF99200CB3A29 /* Assets.xcassets in Resources */,
+				AC8CBBEE237CFDBE00CB3A29 /* ActionChase.wav in Resources */,
 				AC8CBBDF237CF99100CB3A29 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

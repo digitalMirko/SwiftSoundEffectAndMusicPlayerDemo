@@ -40,10 +40,9 @@ class ViewController: UIViewController {
         
         soundEffect.play()
     }
-    
-    // default slider is at .5 out of 1 for volume
+
     @IBAction func soundVolumeSlider(_ sender: Any) {
-        
+        // note: default slider is at .5 out of 1 for volume
         soundEffect.volume = soundVolume.value
     }
     
@@ -71,10 +70,9 @@ class ViewController: UIViewController {
         musicEffect.currentTime = 0
     }
     
-    // default slider is at .5 out of 1 for volume
+    
     @IBAction func musicVolumeSlider(_ sender: Any) {
-        
+        // note: default slider is at .5 out of 1 for volume
         musicEffect.volume = musicVolume.value
     }
 }
-

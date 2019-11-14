@@ -15,6 +15,7 @@
 		AC8CBBE4237CF99200CB3A29 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AC8CBBE2237CF99200CB3A29 /* LaunchScreen.storyboard */; };
 		AC8CBBED237CFDBE00CB3A29 /* Explosion.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = AC8CBBEB237CFDBE00CB3A29 /* Explosion.mp3 */; };
 		AC8CBBEE237CFDBE00CB3A29 /* ActionChase.wav in Resources */ = {isa = PBXBuildFile; fileRef = AC8CBBEC237CFDBE00CB3A29 /* ActionChase.wav */; };
+		AC8CBBF1237CFDFA00CB3A29 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AC8CBBF0237CFDFA00CB3A29 /* AVFoundation.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		AC8CBBE5237CF99200CB3A29 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AC8CBBEB237CFDBE00CB3A29 /* Explosion.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Explosion.mp3; sourceTree = "<group>"; };
 		AC8CBBEC237CFDBE00CB3A29 /* ActionChase.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = ActionChase.wav; sourceTree = "<group>"; };
+		AC8CBBF0237CFDFA00CB3A29 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -35,6 +37,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AC8CBBF1237CFDFA00CB3A29 /* AVFoundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -46,6 +49,7 @@
 			children = (
 				AC8CBBD6237CF99100CB3A29 /* SFX Music Demo */,
 				AC8CBBD5237CF99100CB3A29 /* Products */,
+				AC8CBBEF237CFDFA00CB3A29 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -71,6 +75,14 @@
 				AC8CBBEB237CFDBE00CB3A29 /* Explosion.mp3 */,
 			);
 			path = "SFX Music Demo";
+			sourceTree = "<group>";
+		};
+		AC8CBBEF237CFDFA00CB3A29 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				AC8CBBF0237CFDFA00CB3A29 /* AVFoundation.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

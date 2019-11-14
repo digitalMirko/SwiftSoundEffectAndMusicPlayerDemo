@@ -19,7 +19,6 @@ class ViewController: UIViewController {
     @IBOutlet weak var soundVolume: UISlider!
     @IBOutlet weak var musicVolume: UISlider!
     
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -42,6 +41,7 @@ class ViewController: UIViewController {
         soundEffect.play()
     }
     
+    // default slider is at .5 out of 1 for volume
     @IBAction func soundVolumeSlider(_ sender: Any) {
         
         soundEffect.volume = soundVolume.value
@@ -51,28 +51,30 @@ class ViewController: UIViewController {
     // Music file Buttons / Slider control
     @IBAction func playMusicBtn(_ sender: Any) {
         
-        
+        musicEffect.play()
     }
     
     @IBAction func pauseMusicBtn(_ sender: Any) {
         
-        
+        musicEffect.stop()
     }
     
     @IBAction func restartMusicBtn(_ sender: Any) {
         
-        
+        musicEffect.currentTime = 0
+        musicEffect.play()
     }
     
     @IBAction func stopMusicBtn(_ sender: Any) {
         
-        
+        musicEffect.stop()
+        musicEffect.currentTime = 0
     }
     
+    // default slider is at .5 out of 1 for volume
     @IBAction func musicVolumeSlider(_ sender: Any) {
         
+        musicEffect.volume = musicVolume.value
     }
-    
-    
 }
 

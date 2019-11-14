@@ -11,8 +11,10 @@ import UIKit
 import AVFoundation
 
 class ViewController: UIViewController {
-
     
+    var soundEffect: AVAudioPlayer = AVAudioPlayer()
+    var musicEffect: AVAudioPlayer = AVAudioPlayer()
+
     // Slider controls
     @IBOutlet weak var soundVolume: UISlider!
     @IBOutlet weak var musicVolume: UISlider!
@@ -21,15 +23,28 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        let soundEffectFile = Bundle.main.path(forResource: "Explosion", ofType: "mp3")
+        let musicEffectFile = Bundle.main.path(forResource: "ActionChase", ofType: "wav")
+        
+        do {
+            try soundEffect = AVAudioPlayer(contentsOf: URL(fileURLWithPath: soundEffectFile!))
+            try musicEffect = AVAudioPlayer(contentsOf: URL(fileURLWithPath: musicEffectFile!))
+        }
+        
+        catch {
+            print(error)
+        }
     }
 
-    // Sound file Button / Slider control
+    // Sound Effects file Button / Slider control
     @IBAction func playSoundBtn(_ sender: Any) {
         
+        soundEffect.play()
     }
     
     @IBAction func soundVolumeSlider(_ sender: Any) {
         
+        soundEffect.volume = soundVolume.value
     }
     
     
